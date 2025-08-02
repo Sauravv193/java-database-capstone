@@ -1,49 +1,178 @@
-🧑‍⚕️ Doctor - Sample Issue
-Title: Doctor: View list of patients
+# User Stories for Smart Clinic Management System
 
-Body:
-**User Story**  
-As a doctor, I want to view a list of my patients, so that I can track their medical history and upcoming appointments.
 
-**Acceptance Criteria**  
+## Doctor Stories
+
+### Doctor Story 1: View list of patients
+**User Story**: As a doctor, I want to view a list of my patients, so that I can track their medical history and upcoming appointments.
+
+**Acceptance Criteria:**
 - Doctor logs in and views assigned patients
 - List includes name, age, last visit, and next appointment
 - Data is fetched securely via REST API
 
-**Labels:** role:doctor, feature:patient-management
+**Priority:** High
+**Story Points:** 5
 
+---
+### Doctor Story 2: Update diagnoses and prescriptions
+**User Story**: As a doctor, I want to update patient diagnoses and prescriptions, so that accurate treatment records are maintained.
 
+**Acceptance Criteria:**
+- Doctor selects a patient and adds diagnosis details
+- Doctor can write and save prescriptions
+- Changes are reflected in patient records
 
-🧑‍🦽 Patient - Sample Issue
-Title: Patient: Book an appointment
+**Priority:** High
+**Story Points:** 5
 
-Body:
-**User Story**  
-As a patient, I want to book, reschedule, or cancel appointments, so that I can manage my medical visits conveniently.
+---
+### Doctor Story 3: Manage availability
+**User Story**: As a doctor, I want to manage my availability, so that patients can book appointments only during my working hours.
 
-**Acceptance Criteria**  
-- Patient can select doctor, date, and time
-- Conflict validation for double-booking
-- Confirmation via email or notification
+**Acceptance Criteria:**
+- Doctor sets availability via UI
+- Patients cannot book outside those hours
 
-**Labels:** role:patient, feature:appointments
+**Priority:** Medium
+**Story Points:** 3
 
+---
+### Doctor Story 4: Receive appointment notifications
+**User Story**: As a doctor, I want to receive notifications about upcoming appointments, so that I can prepare in advance.
 
+**Acceptance Criteria:**
+- System sends reminders 15 minutes before appointments
+- Doctors can view appointment calendar
 
+**Priority:** Medium
+**Story Points:** 3
 
-🛠 Admin - Sample Issue
-Title: Admin: Generate reports
+---
+### Doctor Story 5: View appointment history
+**User Story**: As a doctor, I want to view my appointment history, so that I can review past consultations.
 
-Body:
+**Acceptance Criteria:**
+- Past appointments listed by date
+- Includes patient name, reason, and notes
 
-**User Story**  
-As an admin, I want to view and generate reports (e.g., patient visits, doctor activity), so that I can make informed decisions.
+**Priority:** Medium
+**Story Points:** 3
 
-**Acceptance Criteria**  
-- Generate daily/weekly/monthly reports
-- Export to PDF or CSV
-- Accessible only to users with admin role
+---
 
-**Labels:** role:admin, feature:reporting
+## Patient Stories
 
-  
+### Patient Story 1: Register and log in
+**User Story**: As a patient, I want to register and log into the clinic system, so that I can access healthcare services.
+
+**Acceptance Criteria:**
+- User signs up with basic info and credentials
+- Login with validation and error messages
+
+**Priority:** High
+**Story Points:** 5
+
+---
+### Patient Story 2: Search for doctors
+**User Story**: As a patient, I want to search for doctors by specialization, so that I can find the right healthcare provider.
+
+**Acceptance Criteria:**
+- Search results show doctor name, rating, and availability
+- Filters by department and location
+
+**Priority:** High
+**Story Points:** 3
+
+---
+### Patient Story 3: Book/reschedule/cancel appointments
+**User Story**: As a patient, I want to book, reschedule, or cancel appointments, so that I can manage my medical visits conveniently.
+
+**Acceptance Criteria:**
+- UI for scheduling/rescheduling/canceling
+- Validates doctor's availability and patient’s own conflicts
+
+**Priority:** High
+**Story Points:** 5
+
+---
+### Patient Story 4: View medical history and prescriptions
+**User Story**: As a patient, I want to view my medical history and prescriptions, so that I can track my health over time.
+
+**Acceptance Criteria:**
+- List of past diagnoses and treatments
+- Downloadable or printable format
+
+**Priority:** Medium
+**Story Points:** 3
+
+---
+### Patient Story 5: Download prescription
+**User Story**: As a patient, I want to download my prescriptions as PDF, so that I can keep records offline.
+
+**Acceptance Criteria:**
+- Download button visible on prescription page
+- Format is clean and legible
+
+**Priority:** Medium
+**Story Points:** 3
+
+---
+
+## Admin Stories
+
+### Admin Story 1: Manage user roles
+**User Story**: As an admin, I want to manage user roles and permissions, so that only authorized users can access specific functionalities.
+
+**Acceptance Criteria:**
+- Admin can assign or revoke roles (Doctor, Patient)
+- Changes take effect immediately
+
+**Priority:** High
+**Story Points:** 5
+
+---
+### Admin Story 2: Add/remove doctors and staff
+**User Story**: As an admin, I want to add or remove doctors and staff from the system, so that the system reflects current personnel.
+
+**Acceptance Criteria:**
+- Interface to manage doctor/staff list
+- Updated in real time
+
+**Priority:** High
+**Story Points:** 5
+
+---
+### Admin Story 3: Monitor system logs and usage
+**User Story**: As an admin, I want to monitor system usage and logs, so that I can ensure platform security and performance.
+
+**Acceptance Criteria:**
+- View logs for login attempts, database changes
+- Filter logs by user/date
+
+**Priority:** Medium
+**Story Points:** 3
+
+---
+### Admin Story 4: Generate reports
+**User Story**: As an admin, I want to view and generate reports (e.g., patient visits, doctor activity), so that I can make informed decisions.
+
+**Acceptance Criteria:**
+- Generate reports in PDF/CSV
+- Reports include filters for time period, doctor, department
+
+**Priority:** Medium
+**Story Points:** 5
+
+---
+### Admin Story 5: Set clinic working hours
+**User Story**: As an admin, I want to define global clinic working hours, so that appointment times stay within business hours.
+
+**Acceptance Criteria:**
+- Admin can set start/end times via settings page
+- Doctors inherit these by default but can override
+
+**Priority:** High
+**Story Points:** 3
+
+---
