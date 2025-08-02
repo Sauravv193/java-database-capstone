@@ -1,0 +1,29 @@
+**User Story**  
+As a doctor, I want to view a list of my patients, so that I can track their medical history and upcoming appointments.
+
+**Acceptance Criteria**  
+- Doctor logs in and views assigned patients
+- List includes name, age, last visit, and next appointment
+- Data is fetched securely via REST API
+
+**Labels:** role:doctor, feature:patient-management
+**User Story**  
+As a patient, I want to book, reschedule, or cancel appointments, so that I can manage my medical visits conveniently.
+
+**Acceptance Criteria**  
+- Patient can select doctor, date, and time
+- Conflict validation for double-booking
+- Confirmation via email or notification
+
+**Labels:** role:patient, feature:appointments
+**User Story**  
+As an admin, I want to view and generate reports (e.g., patient visits, doctor activity), so that I can make informed decisions.
+
+**Acceptance Criteria**  
+- Generate daily/weekly/monthly reports
+- Export to PDF or CSV
+- Accessible only to users with admin role
+
+**Labels:** role:admin, feature:reporting
+
+  
