@@ -1,1 +1,23 @@
 
+package com.project_back_end.controllers;
+
+import com.project_back_end.services.DoctorService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/doctors")
+public class DoctorController {
+
+    @Autowired
+    private DoctorService doctorService;
+
+    @GetMapping("/availability")
+    public ResponseEntity<?> getDoctorAvailability(@RequestParam Long doctorId, @RequestHeader("Authorization") String token) {
+        if (!doctorService.isValidToken(token)) {
+            return ResponseEntity.status(401).body("Invalid token");
+        }
+        return ResponseEntity.ok(doctorService.getAvailability(doctorId));
+    }
+}
