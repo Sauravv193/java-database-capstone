@@ -1,3 +1,7 @@
+🧑‍⚕️ Doctor - Sample Issue
+Title: Doctor: View list of patients
+
+Body:
 **User Story**  
 As a doctor, I want to view a list of my patients, so that I can track their medical history and upcoming appointments.
 
@@ -7,6 +11,13 @@ As a doctor, I want to view a list of my patients, so that I can track their med
 - Data is fetched securely via REST API
 
 **Labels:** role:doctor, feature:patient-management
+
+
+
+🧑‍🦽 Patient - Sample Issue
+Title: Patient: Book an appointment
+
+Body:
 **User Story**  
 As a patient, I want to book, reschedule, or cancel appointments, so that I can manage my medical visits conveniently.
 
@@ -16,6 +27,15 @@ As a patient, I want to book, reschedule, or cancel appointments, so that I can 
 - Confirmation via email or notification
 
 **Labels:** role:patient, feature:appointments
+
+
+
+
+🛠 Admin - Sample Issue
+Title: Admin: Generate reports
+
+Body:
+
 **User Story**  
 As an admin, I want to view and generate reports (e.g., patient visits, doctor activity), so that I can make informed decisions.
 
